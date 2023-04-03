@@ -1,0 +1,62 @@
+{
+  "Name": "AExtremeStorm",
+  "Description": "AExtremeStormsDesc",
+  "Type": 4,
+  "SubType": 2,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 1,
+      "Value": {
+        "1": [
+          1801,
+          40
+        ]
+      }
+    },
+    {
+      "Name": "AEffectsName2",
+      "Description": "AEffectsDescription2",
+      "Type": 8,
+      "Value": {
+        "8": [
+          1606,
+          20
+        ]
+      }
+    }
+  ],
+  "Translations": [
+    {
+      "Name": "AExtremeStorm",
+      "ENUS": "Extreme Storm",
+      "ZHCN": "极端风暴"
+    },
+    {
+      "Name": "AExtremeStormsDesc",
+      "ZHCN": "${PlanetName}的大气中频繁发生规模巨大的极端风暴。一些周期较长的风暴在轨道上即可见，当中的风速最高可超过700米/秒。造成风暴的原因目前还不清楚，在气象模型中没有发现能够解释这一现象的线索。传感器会持续关注这一异常现象。",
+      "ENUS": "Extreme storms of significant size occur frequently in the ${PlanetName} atmosphere. Some of the longer-period storms are visible from orbit, where wind speeds can exceed 700 m/s. The cause of the storms is not yet known and we have found no clues in meteorological models to explain this phenomenon. Sensors will continue to monitor this anomaly."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "尽可能收集表面的液态氢。",
+      "ENUS": "Collect as much surface liquid hydrogen as possible."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "获得${ItemCount}个${ItemName}。",
+      "ENUS": "Gain ${ItemCount} ${ItemName}."
+    },
+    {
+      "Name": "AEffectsName2",
+      "ZHCN": "我们可以学到很多。",
+      "ENUS": "We can learn a lot."
+    },
+    {
+      "Name": "AEffectsDescription2",
+      "ZHCN": "科技 ${TechName} 解锁进度 +${TechProgress}%。",
+      "ENUS": "Technology ${TechName} progress +${TechProgress}%."
+    }
+  ]
+}
