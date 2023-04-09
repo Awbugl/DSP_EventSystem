@@ -12,18 +12,8 @@ namespace DSP_EventSystem
                                                                             {
                                                                                 { EffectType.AddItem, AddItemAwards },
                                                                                 { EffectType.AddVein, AddVeinAwards },
-                                                                                { EffectType.AddEntity, AddEntityAwards },
                                                                                 { EffectType.AddTechHash, AddTechHashAwards },
-                                                                                { EffectType.TriggerItemEvent, TriggerItemEventAwards },
-                                                                                { EffectType.TriggerVeinEvent, TriggerVeinEventAwards },
-                                                                                { EffectType.TriggerEntityEvent, TriggerEntityEventAwards },
-                                                                                { EffectType.TriggerPlanetEvent, TriggerPlanetEventAwards },
-                                                                                { EffectType.TriggerStarEvent, TriggerStarEventAwards },
-                                                                                { EffectType.PlanetEffect, PlanetEffectAwards },
-                                                                                { EffectType.StarEffect, StarEffectAwards },
                                                                             };
-
-        // TODO: Implement all awards
 
         public static void AddItemAwards(int[] value)
         {
@@ -78,8 +68,6 @@ namespace DSP_EventSystem
             }
         }
 
-        public static void AddEntityAwards(int[] value) => throw new NotImplementedException();
-
         public static void AddTechHashAwards(int[] value)
         {
             for (var i = 0; i < value.Length; i += 2)
@@ -93,19 +81,5 @@ namespace DSP_EventSystem
                 GameMain.history.techStates[value[i]] = techState;
             }
         }
-
-        public static void TriggerItemEventAwards(int[] value) => throw new NotImplementedException();
-
-        public static void TriggerVeinEventAwards(int[] value) => throw new NotImplementedException();
-
-        public static void TriggerEntityEventAwards(int[] value) => throw new NotImplementedException();
-
-        public static void TriggerPlanetEventAwards(int[] value) => throw new NotImplementedException();
-
-        public static void TriggerStarEventAwards(int[] value) => throw new NotImplementedException();
-
-        public static void PlanetEffectAwards(int[] value) => throw new NotImplementedException();
-
-        public static void StarEffectAwards(int[] value) => throw new NotImplementedException();
     }
 }
