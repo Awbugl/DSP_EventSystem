@@ -103,7 +103,7 @@
         <Content Include="DefaultPath.props" />
         <Content Include="dependencies\events\AbandonedPropulsionDevice.json" />
         <Content Include="dependencies\events\AncientDetectionMarkers.json" />
-        <Content Include="dependencies\events\AExtremeStorm.json" />
+        <Content Include="dependencies\events\ExtremeStorm.json" />
         <Content Include="dependencies\events\EnergySignature.json" />
         <Content Include="dependencies\events\MagneticInversion.json" />
         <Content Include="dependencies\events\SolarSail.json" />
