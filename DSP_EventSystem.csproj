@@ -101,7 +101,14 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="DefaultPath.props" />
+        <Content Include="dependencies\events\AbandonedPropulsionDevice.json" />
+        <Content Include="dependencies\events\AncientDetectionMarkers.json" />
         <Content Include="dependencies\events\AExtremeStorm.json" />
+        <Content Include="dependencies\events\EnergySignature.json" />
+        <Content Include="dependencies\events\MagneticInversion.json" />
+        <Content Include="dependencies\events\SolarSail.json" />
+        <Content Include="dependencies\events\StingingGrille.json" />
+        <Content Include="dependencies\events\Wipeout.json" />
         <Content Include="README.md" />
         <Content Include="dependencies\Newtonsoft.Json.dll" />
     </ItemGroup>

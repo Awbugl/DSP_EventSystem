@@ -1,0 +1,41 @@
+{
+  "Name": "AEnergySignature",
+  "Description": "AEnergySignaturesDesc",
+  "Type": 4,
+  "SubType": 2,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 4,
+      "Value": {
+        "AddTechHash": [
+          1606,
+          25
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "AEnergySignature",
+      "ENUS": "Energy Signature",
+      "ZHCN": "能源特征"
+    },
+    {
+      "Name": "AEnergySignaturesDesc",
+      "ZHCN": "在${PlanetName}的大气层深处识别到了奇怪的能源特征。该能源似乎是从某建筑发出的，也许是轨道站的残骸。但超高的大气压使我们无法接近。不过，对这一独特特征的扫描让我们得到了大量的宝贵数据。",
+      "ENUS": "we have identified a strange energy signature deep in the atmosphere of ${PlanetName} . The energy appears to be emanating from a structure, perhaps the remains of an orbital station. However, the ultra-high atmospheric pressure prevented us from getting close. However, a scan of this unique feature gave us a wealth of valuable data."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "很迷人。",
+      "ENUS": "Fascinating."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "科技 ${TechName} 解锁进度 +${TechProgress}%。",
+      "ENUS": "Technology ${TechName} progress +${TechProgress}%."
+    }   
+  ]
+}

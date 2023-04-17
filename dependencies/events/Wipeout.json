@@ -1,0 +1,41 @@
+{
+  "Name": "AWipeout",
+  "Description": "AWipeoutsDesc",
+  "Type": 4,
+  "SubType": 1,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 4,
+      "Value": {
+        "AddTechHash": [
+          1522,
+          10
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "AWipeout",
+      "ENUS": "Wipeout",
+      "ZHCN": "擦肩而过"
+    },
+    {
+      "Name": "AWipeoutsDesc",
+      "ZHCN": "在接近${PlanetName}时，几枚质量加速炮弹从重力井边缘飞驰而过。这些投射物已经有数十亿年的历史了，从轨迹判断，它们似乎是从邻近星系发射的，在偏离原定目标继续默默的飞行了许久-直到今天你看到它们。尽管历史悠久，但我们回收的这些炮弹的设计还是非常尖端的。",
+      "ENUS": "While approaching ${PlanetName}, several mass acceleration projectiles zipped past the edge of the gravity well.These projectiles are billions of years old, and judging from their trajectories, they appear to have been launched from a neighboring galaxy and continued to fly silently for a long time after deviating from their original targets-until you see them today. Despite their long history, the design of these projectiles we recovered is still very cutting-edge."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "难以置信。",
+      "ENUS": "Incredible."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "科技 ${TechName} 解锁进度 +${TechProgress}%。",
+      "ENUS": "Technology ${TechName} progress +${TechProgress}%."
+    }   
+  ]
+}

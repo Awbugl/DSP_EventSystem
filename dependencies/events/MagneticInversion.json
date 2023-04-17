@@ -1,0 +1,41 @@
+{
+  "Name": "AMagneticInversion",
+  "Description": "AMagneticInversionsDesc",
+  "Type": 4,
+  "SubType": 1,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 4,
+      "Value": {
+        "AddTechHash": [
+          1711,
+          25
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "AMagneticInversion",
+      "ENUS": "Magnetic Inversion",
+      "ZHCN": "磁力反转"
+    },
+    {
+      "Name": "AMagneticInversionsDesc",
+      "ZHCN": "${PlanetName}在被观测时自身的磁场出现了完全的反转。幸亏这些都被我们的传感器记录了下来，给我们提供了宝贵的数据。",
+      "ENUS": "The magnetic field of ${PlanetName} itself appeared to be completely reversed. Fortunately, these were recorded by our sensors, providing us with valuable data."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "有意思。",
+      "ENUS": "Interesting."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "科技 ${TechName} 解锁进度 +${TechProgress}%。",
+      "ENUS": "Technology ${TechName} progress +${TechProgress}%."
+    }   
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "AAncientDetectionMarkers",
+  "Description": "AAncientDetectionMarkerssDesc",
+  "Type": 4,
+  "SubType": 1,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 2,
+      "Value": {
+        "AddVein": [
+          1,
+          50000
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "AAncientDetectionMarkers",
+      "ENUS": "Ancient Detection Markers",
+      "ZHCN": "古老的侦测标记器"
+    },
+    {
+      "Name": "AAncientDetectionMarkerssDesc",
+      "ZHCN": "${PlanetName}的表面发现了一个小型的短距离传输装置。它看起来像是一个古老的侦测标记器，很久之前被安放于此来定位一批大型的珍贵金属矿藏。该来的矿工没能到达，因为这些珍贵的金属还静静的躺在这里。",
+      "ENUS": "A small, short-range transmission device was found on the surface of ${PlanetName}. It looks like an ancient detection marker that was placed here a long time ago to locate a large deposit of precious metals. The miners who were supposed to come didn't get there because the precious metals are still lying here quietly."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "很迷人。",
+      "ENUS": "It's fascinating."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "生成一簇 ${VeinCount} 储量的 ${VeinName} 。",
+      "ENUS": "Generates a cluster of ${VeinCount} ${VeinName} veins."
+    }   
+  ]
+}

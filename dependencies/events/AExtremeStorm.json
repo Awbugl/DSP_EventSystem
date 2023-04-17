@@ -9,7 +9,7 @@
       "Description": "AEffectsDescription1",
       "Type": 1,
       "Value": {
-        "1": [
+        "AddItem": [
           1801,
           40
         ]
@@ -18,9 +18,9 @@
     {
       "Name": "AEffectsName2",
       "Description": "AEffectsDescription2",
-      "Type": 8,
+      "Type": 4,
       "Value": {
-        "8": [
+        "AddTechHash": [
           1606,
           20
         ]

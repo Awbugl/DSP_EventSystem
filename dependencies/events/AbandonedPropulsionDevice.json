@@ -1,0 +1,41 @@
+{
+  "Name": "AAbandonedPropulsionDevice",
+  "Description": "AAbandonedPropulsionDevicesDesc",
+  "Type": 4,
+  "SubType": 1,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 4,
+      "Value": {
+        "AddTechHash": [
+          1711,
+          25
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "AAbandonedPropulsionDevice",
+      "ENUS": "Abandoned propulsion device",
+      "ZHCN": "遗弃的推进装置"
+    },
+    {
+      "Name": "AAbandonedPropulsionDevicesDesc",
+      "ZHCN": "${PlanetName}的其中一个大坑中心有外星工艺制造的金属机械。\n我们认为这些大型机械是用于推动整个星球的。其目的便是将${PlanetName}从原先轨道中推出，但目的地不明。将这些推动装置进行拆卸与分析，或许可以提升我方的推进科技。",
+      "ENUS": "One of the large craters in ${PlanetName} has metal machinery made by alien craft in the center.\nWe believe that these large machines were used to propel the entire planet. Their purpose is to push ${PlanetName} out of its original orbit, but the destination is unknown. Disassembling and analyzing these propulsion devices may allow us to improve our propulsion technology."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "准了。",
+      "ENUS": "Granted."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "科技 ${TechName} 解锁进度 +${TechProgress}%。",
+      "ENUS": "Technology ${TechName} progress +${TechProgress}%."
+    }   
+  ]
+}

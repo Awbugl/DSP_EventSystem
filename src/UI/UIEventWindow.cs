@@ -119,6 +119,13 @@ namespace DSP_EventSystem
                     result = result.Replace("${ItemName}", LDB.items.Select(effectvalue[EffectType.AddItem][0]).Name.Translate())
                                    .Replace("${ItemCount}", effectvalue[EffectType.AddItem][1].ToString());
                 }
+                
+                if (effectvalue?.ContainsKey(EffectType.AddVein) == true)
+                {
+                    result = result.Replace("${VeinName}", LDB.veins.Select(effectvalue[EffectType.AddVein][0]).Name.Translate())
+                                   .Replace("${VeinCount}", effectvalue[EffectType.AddVein][1].ToString());
+                }
+                
 
                 return result;
             }

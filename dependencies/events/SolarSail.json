@@ -1,0 +1,41 @@
+{
+  "Name": "ASolarSail",
+  "Description": "ASolarSailsDesc",
+  "Type": 4,
+  "SubType": 1,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 4,
+      "Value": {
+        "AddTechHash": [
+          3106,
+          80
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "ASolarSail",
+      "ENUS": "Solar Sail",
+      "ZHCN": "太阳帆"
+    },
+    {
+      "Name": "ASolarSailsDesc",
+      "ZHCN": "我们在${PlanetName}的轨道附近发现了一艘被遗弃的太阳帆飞船。这艘亚光速飞船的主人来自未知文明，并且似乎有数千年的历史了。其中一面帆有一个大裂口，似乎是被物体穿过留下的——很可能是一颗流星——这或许是飞船失去飞行能力的原因。虽然这艘飞船的科技已经很大程度上落伍了，但一些工学设计还是非常有趣的。",
+      "ENUS": "We found an abandoned solar sail spacecraft near the orbit of ${PlanetName}. The owner of this sublight ship is from an unknown civilization and appears to be thousands of years old. One of the sails has a large rip that appears to have been left by an object passing through it - most likely a meteor - which may be the reason for the ship's loss of flight capability. Although the ship's technology is largely outdated, some of the engineering design is still very interesting."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "有趣但原始的设计。",
+      "ENUS": "Interesting but primitive design."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "科技 ${TechName} 解锁进度 +${TechProgress}%。",
+      "ENUS": "Technology ${TechName} progress +${TechProgress}%."
+    }   
+  ]
+}

@@ -28,12 +28,16 @@ namespace DSP_EventSystem
             _vfAudio.spatialBlendOverride = 0f;
 
             var traverse = Traverse.Create(_vfAudio).Field("proto");
-            var proto = traverse.GetValue<AudioProto>();
-            proto.ClipCount = 1;
-            proto.audioClip = AudioClip;
-            proto.audioClipGroup = new[] { AudioClip };
-            proto.PitchRandomness = 0f;
-            traverse.SetValue(proto);
+            traverse.SetValue(new AudioProto
+                              {
+                                  Pitch = 1,
+                                  Volume = 0.4f,
+                                  SpatialBlend = 1,
+                                  ClipCount = 1,
+                                  audioClip = AudioClip,
+                                  audioClipGroup = new[] { AudioClip },
+                                  PitchRandomness = 0f
+                              });
         }
 
         [HarmonyPatch(typeof(GameScenarioLogic), "NotifyOnLandPlanet")]
@@ -80,7 +84,7 @@ namespace DSP_EventSystem
 
             var @event = planetEventSubType.GetRandomEvent();
 
-            TriggerEvent(planet, @event);
+            if (@event != null) TriggerEvent(planet, @event);
         }
 
         public static void TriggerEvent(PlanetData planet, Event @event)

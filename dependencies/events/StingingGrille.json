@@ -1,0 +1,41 @@
+{
+  "Name": "AStingingGrille",
+  "Description": "AStingingGrillesDesc",
+  "Type": 4,
+  "SubType": 1,
+  "Effects": [
+    {
+      "Name": "AEffectsName1",
+      "Description": "AEffectsDescription1",
+      "Type": 2,
+      "Value": {
+        "AddVein": [
+          10,
+          50000
+        ]
+      }
+    }    
+  ],
+  "Translations": [
+    {
+      "Name": "AStingingGrille",
+      "ENUS": "Stinging Grille",
+      "ZHCN": "刺耳格栅"
+    },
+    {
+      "Name": "AStingingGrillesDesc",
+      "ZHCN": "${PlanetName}上遍布着纵横交错的矿物复合带，用高耸且富有弹性的架子高悬于星球崎岖的表面上。这很明显是外星文明所为。由于受到气流的扰动，架子不断摇摆，使得层叠的带状物互相摩擦，产生无法听到的声波。报告称将此声波从星球的背景噪音中分离出来时遇到了困难，同时也提出如果有意进行开采，可以将矿物带破坏，从而进行回收利用。",
+      "ENUS": "The ${PlanetName} is dotted with crisscrossing bands of mineral complexes, suspended high above the planet's rugged surface on towering and resilient shelves. This is clearly the work of an extraterrestrial civilization. Disturbed by air currents, the shelves are constantly swaying, causing the cascading bands to rub against each other, producing an inaudible sound wave. The report claims difficulties in separating this sound wave from the planet's background noise, and also suggests that the mineral bands could be destroyed and thus recycled if mining were intentionally carried out."
+    },
+    {
+      "Name": "AEffectsName1",
+      "ZHCN": "准备回收矿物带。",
+      "ENUS": "Preparing to recycle the mineral belt."
+    },
+    {
+      "Name": "AEffectsDescription1",
+      "ZHCN": "生成一簇 ${VeinCount} 储量的 ${VeinName} 矿。",
+      "ENUS": "Generates a cluster of ${VeinCount} ${VeinName} veins."
+    }   
+  ]
+}
