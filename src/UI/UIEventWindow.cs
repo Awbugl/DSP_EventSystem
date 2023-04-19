@@ -126,7 +126,6 @@ namespace DSP_EventSystem
                                    .Replace("${VeinCount}", effectvalue[EffectType.AddVein][1].ToString());
                 }
                 
-
                 return result;
             }
 

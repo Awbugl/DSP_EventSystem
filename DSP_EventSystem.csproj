@@ -96,6 +96,8 @@
         <Compile Include="src\Event\EventType.cs" />
         <Compile Include="src\Event\EffectType.cs" />
         <Compile Include="src\DSP_EventSystem.cs" />
+        <Compile Include="src\Reflection\EventTrigger.cs" />
+        <Compile Include="src\Reflection\IEventTrigger.cs" />
         <Compile Include="src\UI\UIEventWindow.cs" />
         <Compile Include="src\UI\Util.cs" />
     </ItemGroup>
