@@ -91,7 +91,7 @@
         <Compile Include="src\EventSystem\EventSystem.cs" />
         <Compile Include="src\EventSystem\Awards.cs" />
         <Compile Include="src\EventSystem\InternalFunctions.cs" />
-        <Compile Include="src\EventSystem\JsonDataReader.cs" />
+        <Compile Include="src\EventSystem\AssetsLoader.cs" />
         <Compile Include="src\Event\Event.cs" />
         <Compile Include="src\Event\EventType.cs" />
         <Compile Include="src\Event\EffectType.cs" />

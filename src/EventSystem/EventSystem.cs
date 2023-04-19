@@ -82,12 +82,38 @@ namespace DSP_EventSystem
         {
             var planetEventSubType = planet.type == EPlanetType.Gas ? PlanetEventSubType.GasGiant : PlanetEventSubType.Terrestrial;
 
-            var @event = planetEventSubType.GetRandomEvent();
+            Event @event;
 
-            if (@event != null) TriggerEvent(planet, @event);
+            if (Random.NextDouble() < 0.3f)
+            {
+                var trigger = EventTriggers.GetRandomEventTrigger();
+                Logger.LogInfo($"Get event trigger {trigger.GetType().Name}");
+                
+                if (trigger.OnPlanetLanded(planet))
+                {
+                    @event = trigger.Events.Dequeue();
+                    
+                    if (@event != null)
+                    {
+                        var curStage = trigger.Events.CurrentEventStage;
+                        Logger.LogInfo($"event trigger stage {curStage} {@event.Name}");
+                        TriggerPlanetEvent(planet, @event);
+                        trigger.OnTriggered(curStage);
+                        return;
+                    }
+                }
+            }
+
+            @event = planetEventSubType.GetRandomEvent();
+
+            if (@event != null)
+            {
+                Logger.LogInfo($"Trigger event {@event.Name}");
+                TriggerPlanetEvent(planet, @event);
+            }
         }
 
-        public static void TriggerEvent(PlanetData planet, Event @event)
+        public static void TriggerPlanetEvent(PlanetData planet, Event @event)
         {
             _uiEventWindow.SetEvent(planet, @event);
             _vfAudio.Play();

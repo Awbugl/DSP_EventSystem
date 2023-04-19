@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using BepInEx;
 using HarmonyLib;
 using crecheng.DSPModSave;
@@ -22,7 +23,8 @@ namespace DSP_EventSystem
         {
             EventSystem.Logger = Logger;
             Harmony.CreateAndPatchAll(typeof(EventSystem), MODGUID);
-            Logger.LogInfo("CustomEventSystem Events:" + EventSystem.Events.Count);
+            Logger.LogInfo("CustomEventSystem JsonEvents:" + EventSystem.Events.Sum(i => i.Value.Count));
+            Logger.LogInfo("CustomEventSystem EventTriggers:" + EventSystem.EventTriggers.Count);
         }
 
         public void Export(BinaryWriter w) => EventSystem.Export(w);

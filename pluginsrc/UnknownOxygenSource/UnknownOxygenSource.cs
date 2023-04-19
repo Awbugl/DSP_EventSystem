@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using DSP_EventSystem;
+﻿using DSP_EventSystem;
 using DSP_EventSystem.Reflection;
 
 namespace UnknownOxygenSource
@@ -9,19 +8,21 @@ namespace UnknownOxygenSource
     {
         public UnknownOxygenSource()
         {
-            Events = new Queue<Event>();
-            Events.Enqueue(new Event() { });
+            Events = new EventChain();
         }
 
-        public Queue<Event> Events { get; }
+        public EventChain Events { get; }
 
         public bool CanTriggerMultipleTimes { get; } = false;
 
-        public bool CanTrigger(PlanetData planet)
+        public bool OnPlanetLanded(PlanetData planet)
         {
             return true;
         }
 
-        public void OnTriggered() { }
+        public void OnTriggered(int stage)
+        {
+            
+        }
     }
 }
