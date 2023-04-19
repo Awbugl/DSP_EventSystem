@@ -1,23 +1,27 @@
-﻿using DSP_EventSystem;
+﻿using System.Collections.Generic;
+using DSP_EventSystem;
 using DSP_EventSystem.Reflection;
 
 namespace UnknownOxygenSource
 {
     [RegisterEventTrigger]
-    public class UnknownOxygenSource : Event, IEventTrigger 
+    public class UnknownOxygenSource : IEventTrigger
     {
-        public bool CanTriggerMultipleTimes { get; }
-        
-        public bool EventChain { get; }
+        public UnknownOxygenSource()
+        {
+            Events = new Queue<Event>();
+            Events.Enqueue(new Event() { });
+        }
+
+        public Queue<Event> Events { get; }
+
+        public bool CanTriggerMultipleTimes { get; } = false;
 
         public bool CanTrigger(PlanetData planet)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
 
-        public void OnTriggered()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void OnTriggered() { }
     }
 }

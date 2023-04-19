@@ -1,14 +1,12 @@
+using System.Collections.Generic;
+
 namespace DSP_EventSystem.Reflection
 {
     public interface IEventTrigger
     {
-        EventType Type { get; }
-
-        int SubType { get; }
+        Queue<Event> Events { get; }
 
         bool CanTriggerMultipleTimes { get; }
-        
-        bool EventChain { get; }
 
         bool CanTrigger(PlanetData planet);
 
